@@ -1,0 +1,451 @@
+Q1.  Print a Solid Square
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter n");
+    scanf("%d", &n);
+    //i= controls rows  j= controls columns
+    for(int i =1; i<=n;i++){
+        for(int j=1; j<=n;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+   
+
+    //Q2. Print a Right-Angled Triangle
+
+#include <stdio.h>
+
+int main() {
+int n;
+    printf("enter n");
+    scanf("%d",&n);
+    for(int i= 1; i<=n;i++){
+        for(int j=1; j<=i; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+
+
+    //Q3.  Print an Inverted Triangle
+
+#include <stdio.h>
+
+int main() {
+
+int n;
+    printf("enter n");
+    scanf("%d", &n);
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+
+
+    return 0;
+}
+
+
+    //Q4.  Print a Number Triangle
+
+#include <stdio.h>
+
+int main() {
+
+  int n;
+    printf("enter n");
+    scanf("%d", &n);
+    for(int i=1;i<=n; i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",i);
+            
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+
+    //Q5. Print a Repeated-Number Triangle
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("enter n");
+    scanf("%d", &n);
+    for(int i=1;i<=n; i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+            
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+    //Q6. Print a Consecutive-Number Triangle
+
+#include <stdio.h>
+
+int main() {
+    
+int n;
+    printf("enter n");
+    scanf("%d",&n);
+    int num=1;
+    
+    for(int i=1; i<=n; i++ ){
+        for (int j=1;j<=i; j++){
+            
+            printf("%d", num);
+num++;
+            
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+    
+    
+//Q7. Print a Right-Aligned Star Triangle
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("enter n");
+    scanf("%d",&n);
+    for(int i=1;i<=n ;i++){
+        for(int j=1; j<=n-1; j++){
+            printf(" ");
+
+        }
+            for(int k=1;k <=i; k++){
+                printf("*");
+            }
+printf("\n");
+    }
+
+
+    return 0;
+}
+
+    
+//Q8.  Print a Centered Pyramid
+    
+#include <stdio.h>
+
+int main() {
+
+int n;
+    printf("enter n");
+    scanf("%d", &n);
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n-1; j++){
+            printf(" ");
+        }
+        for(int k=1; k<=2*i-1; k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+
+    
+// Q9. Print an Inverted Centered Pyramid
+    
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(int i = n; i >= 1; i--) {
+
+    
+        for(int j = 1; j <= n-i; j++) {
+            printf(" ");
+        }
+        
+        for(int k = 1; k <= 2*i-1; k++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+//Q10. Print a Hollow Square
+
+
+#include <stdio.h>
+
+int main() {
+
+
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n; j++) {
+
+            if(i == 1 || i == n || j == 1 || j == n) {
+                printf("*");
+            }
+            else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+//Q11.   Print a Hollow Right-Angled Triangle
+
+
+#include <stdio.h>
+
+int main() {
+
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= i; j++) {
+
+            if(j == 1 || j == i || i == n) {
+                printf("*");
+            }
+            else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+Q12. Print a Multiplication Table Grid
+
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+
+        for(int j = 1; j <= n; j++) {
+            printf("%d\t", i * j);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+Q13.  Print a Checkerboard
+
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+
+        for(int j = 1; j <= n; j++) {
+
+            if((i + j) % 2 == 0) {
+                printf("* ");
+            }
+            else {
+                printf("  ");
+            }
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+Q14. Print Floyd's Triangle
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    int num = 1;
+
+    for(int i = 1; i <= n; i++) {
+
+        for(int j = 1; j <= i; j++) {
+            printf("%d ", num);
+            num++;
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+Q15.  Print a Butterfly Pattern
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    // Upper half
+    for(int i = 1; i <= n; i++) {
+
+        // Left stars
+        for(int j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        // Middle spaces
+        for(int j = 1; j <= 2*(n-i); j++) {
+            printf(" ");
+        }
+
+        // Right stars
+        for(int j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    // Lower half
+    for(int i = n-1; i >= 1; i--) {
+
+        // Left stars
+        for(int j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        // Middle spaces
+        for(int j = 1; j <= 2*(n-i); j++) {
+            printf(" ");
+        }
+
+        // Right stars
+        for(int j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+Q16. Print a Diamond Pattern
+
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    // Upper half
+    for(int i = 1; i <= n; i++) {
+
+        // Spaces
+        for(int j = 1; j <= n-i; j++) {
+            printf(" ");
+        }
+
+        // Stars
+        for(int k = 1; k <= 2*i-1; k++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+
+ 
+
+
+    // Lower half
+    for(int i = n-1; i >= 1; i--) {
+
+        // Spaces
+        for(int j = 1; j <= n-i; j++) {
+            printf(" ");
+        }
+
+        // Stars
+        for(int k = 1; k <= 2*i-1; k++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
